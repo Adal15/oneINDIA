@@ -58,7 +58,7 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  animation: fadeSlide 50s infinite; /* 10 slides × 5s each = 50s total */
+  animation: fadeSlide 50s infinite;
 }
 
 /* Text inside slides */
@@ -123,7 +123,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;     /* ✅ Centers all content horizontally */
+  align-items: center;     
   margin: 60px auto;
   background: #ffffff;
   padding: 30px 0;
@@ -165,13 +165,13 @@
   font-size: 1rem;
   color: #444;
   text-align: justify;
-  width: 90%; /* Keeps paragraphs nicely aligned with the table */
+  width: 90%; 
 }
 
 /* ==== TABLE DESIGN ==== */
 .course {
-  width: 90%;                 /* ✅ Table width 90% */
-  margin: 25px auto;          /* ✅ Centers horizontally */
+  width: 90%;                 
+  margin: 25px auto;          
   border-collapse: collapse;
   font-size: 16px;
   text-align: center;

@@ -155,7 +155,7 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  animation: slideShow 15s infinite; /* 6 images × 2.5s = 15s full cycle */
+  animation: slideShow 15s infinite; 
 }
 
 /* Each image starts at a different animation delay */
@@ -338,12 +338,12 @@ body {
 
 .zu-stats {
   display: flex;
-  flex-wrap: nowrap; /* prevents wrapping */
-  justify-content: space-between; /* optional: evenly space them */
+  flex-wrap: nowrap; 
+  justify-content: space-between; 
   background: white;
   border-radius: 5px;
   overflow:auto;
-  max-width: 110%; /* or increase if too tight */
+  max-width: 110%;
   margin: 50px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 220px;
@@ -578,7 +578,7 @@ form {
 .form-group textarea:not(:placeholder-shown) + label {
   top: -10px;
   left: 10px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #9a1e22;
 }
 
@@ -673,10 +673,7 @@ button:hover {
   padding-top: 40px;
 }
 
-/* .tawasul-logo {
-  width: 150px;
-  margin-bottom: 10px;
-} */
+
 
 .footer-contact ul {
   list-style: none;
