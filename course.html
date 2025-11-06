@@ -1,60 +1,402 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCE-Course</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="./course.css">
 </head>
 <body>
-    <h1>Courses</h1>
+  <div class="red"></div>
+    <header class="navbar">
+      <div class="nav-left">
+        <a href="./index.html" class="logo">
+          <i class="fa-solid fa-house"></i> About Oriental College Of Education
+        </a>
+
+        <nav class="nav-links">
+          <ul>
+            <li class="has-dropdown">
+              <a href="#">Courses<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="./course.html">B.Ed.</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#">Admission & Fee<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="./course.html">Admission Process</a></li>
+                <li><a href="./course.html">Fee Structure</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#">Management & Staff<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="./course.html">Admission Process</a></li>
+                <li><a href="./course.html">Fee Structure</a></li>
+                <li><a href="./course.html">IQAC </a></li>
+                <li><a href="./course.html">GRC</a></li>
+                <li><a href="./course.html">Governance Structure</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#">Students<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="./course.html">Details of 2022-2024</a></li>
+                <li><a href="./course.html">Details of 2021-2023</a></li>
+                <li><a href="./course.html">Anti Ragging</a></li>
+                <li><a href="./course.html">Grievance Redressal</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#">Documents & Policy<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="./course.html">Legal Document as per NCTE Guideline</a></li>
+                <li><a href="./course.html">Legal Policy</a></li>
+                <li><a href="./course.html">Balance Sheet</a></li>
+                <li><a href="./course.html">Fees & Fund</a></li>
+                <li><a href="./course.html">Income & Expenditure 2022-2023</a><li>
+                  <li><a href="./course.html">Receipts & Payments 2022-2023</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Gallery</a></li>
+
+            <li class="has-dropdown">
+              <a href="#"
+                >Achievement & Others<i class="fa fa-angle-down"></i
+              ></a>
+              <ul class="dropdown">
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Infrastructure</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <ul>
+          <li class="has-dropdown">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- <header class="banner">
+    <div class="banner-left">
+      <h1>B.ED. Courses</h1>
+    </div>
+    <div class="banner-right">
+      <h2>Programs A-Z Listing</h2>
+    </div>
+  </header> -->
+    
+<div class="banner">
+    <div class="left-section">
+      <h1>B.ED. Course</h1>
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><a href="#">Childhood and Growing Up</a></div>
+        <div class="slide"><a href="#">Contemporary India and Education</a></div>
+        <div class="slide"><a href="#">Learning and Teaching</a></div>
+        <div class="slide"><a href="#">Language across the Curriculum</a></div>
+        <div class="slide"><a href="#">Understanding Disciplines and Subjects</a></div>
+        <div class="slide"><a href="#">Gender, School and Society</a></div>
+        <div class="slide"><a href="#">Pedagogy of School Subject - Part I</a></div>
+        <div class="slide"><a href="#">Reading and Reflecting on Texts</a></div>
+        <div class="slide"><a href="#">Drama and Art in Education</a></div>
+        <div class="slide"><a href="#">Critical Understanding of ICT</a></div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="courses">
+    <h2>Duration of B.Ed. Course-one Academic Year</h2>
+    <b>Course Name : B.Ed. 1st Year ANNUAL DISTRIBUTION OF COURSES</b>
+    <table class="course">
+      <tr>
+        <th>Course No.</th>
+        <th>Course Name</th>
+        <th>Credit</th>
+        <th>Theory</th>
+        <th>Practicum*</th>
+        <th>Full Marks</th>
+      </tr>
+      <tr>
+        <td>Course 1</td>
+        <td>Childhood and Growing Up</td>
+        <td>4</td>
+        <td>80</td>
+        <td>20</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Course 2</td>
+        <td>Contemporary India and Education</td>
+        <td>4</td>
+        <td>80</td>
+        <td>20</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Course 3</td>
+        <td>Learning and Teaching</td>
+        <td>4</td>
+        <td>80</td>
+        <td>20</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Course 4</td>
+        <td>Language across the Curriculum</td>
+        <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Course 5</td>
+        <td>Understanding Disciplines and Subjects</td>
+        <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Course 6</td>
+        <td>Gender, School and Society</td>
+       <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Course 7a</td>
+        <td>Pedagogy of School Subject-Part-I</td>
+        <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      <tr>
+        <td>Course EPC1</td>
+        <td>Reading and Reflecting on Texts</td>
+        <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Course EPC2</td>
+        <td>Drama and Art in Education</td>
+        <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Course  EPC3</td>
+        <td>Critical Understanding of ICT</td>
+        <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <th colspan="2">total</th>
+        <th>26</th>
+        <th>520</th>
+        <th>130</th>
+        <th>650</th>
+
+      </tr>
+    </table>
+    <p>*Engagement with the Field: Tasks and Assignments for Courses 1-6 & 7a</p>
+
+    <b>Course 7a: PEDAGOGY OF SCHOOL SUBJECT-Part-I</b>
+    <p>A student-teacher has to select two pedagogical subjects (each of 50 marks), one subject in each year, from following list. The choice of such subject will depend on the main papers which they have studied at the graduation level/master level. Along with these, two languages cannot be opted as pedagogical subject. From this list itself learner has-to choose second school subject under Course 7b in Second Year.</p>
+    <b>School Internship</b>
+    <p>Having gained some experience with the child, the community and schools during the course works in institutes, the student-teachers need to be sent to schools for firsthand experience. During the first year, to support better understanding of schools and in preparation of Internship, teacher education institutes shall make provisions for visits to innovative centres of pedagogy and learning-innovative schools, educational resource centres, etc. and to a designated school for at least four weeks.</p>
+    
+    <h2>2nd year ANNUAL DISTRIBUTION OF COURSES</h2>
+  <table class="course">
+      <tr>
+        <th>Course No.</th>
+        <th>Course Name</th>
+        <th>Credit</th>
+        <th>Theory</th>
+        <th>Practicum*</th>
+        <th>Full Marks</th>
+      </tr>
+      <tr>
+        <td>Course 7b</td>
+        <td>Pedagogy of School Subject-Part-II</td>
+        <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Course 8</td>
+        <td>Knowledge and Curriculum</td>
+        <td>4</td>
+        <td>80</td>
+        <td>20</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Course 9</td>
+        <td>Assessment for Learning</td>
+        <td>4</td>
+        <td>80</td>
+        <td>20</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Course 10</td>
+        <td>Creating an Inclusive School</td>
+        <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Course 11</td>
+        <td>Optional Course***</td>
+        <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Course EPC4</td>
+        <td>Understanding the Self</td>
+       <td>2</td>
+        <td>40</td>
+        <td>10</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td colspan="2">School Internship</td>
+        <td>10</td>
+        <td>-</td>
+        <td>-</td>
+        <td>250</td>
+      
+      <tr>
+        <th colspan="2">Total</th>
+        <th>26</th>
+        <th>320</th>
+        <th>80</th>
+        <th>650</th>
+      </tr>
+    </table>
+    <p>*One Credit is equal to 16 hours for theory and for practicum 32 hours</p>
+    <p>** Engagement with the Field: Tasks and Assignments for Courses 7b & 8-10</p>
+    <p>***Each student-teacher will take One Optional Paper</p>
+    <b>Course 7b: Pedagogy of a School Subject-Part-II</b>
+    <p>Student-teacher has to select one more pedagogy subject listed under Course 7a (Pedagogy of the School Subject-Part-I). They cannot choose same subject or two languages together..</p>
+    <b>Course 11: Optional Course</b>
+    <p id="pa">The student-teachers have to select any one from the five given below optional subjects:</p>
+    <b>Course 11(a): Education for Peace</b>
+    <b>Course 11(b): Education for Conservation and Environmental Regeneration</b>
+    <b>Course 11(c): Health and Physical Education</b>
+    <b>Course 11(d): Guidance and Counselling</b>
+    <b>Course 11(e): School Management and Leadership</b>
+ 
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-columns">
+
+        <div class="footer-col">
+          <h4>Key Sites</h4>
+          <ul>
+            <li><a href="#">About OCE</a></li>
+            <li><a href="#">Academic Calender</a></li>
+            <li><a href="#">Infrastructure</a></li>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Fees & Fund</a></li>
+            <li><a href="#">Legal Policy</a></li>
+            <li><a href="#">Campus Life</a></li>
+            <li><a href="#">Employees</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Link</h4>
+          <ul>
+            <li><a href="#">NCET</a></li>
+            <li><a href="#">ERC </a></li>
+            <li><a href="#">LNMU</a></li>
+            <li><a href="#">Anti Ragging</a></li>
+            <li><a href="#">Grievance Redressal</a></li>
+            <li><a href="#">IQAC</a></li>
+            <li><a href="#">Mandatory Disclosure</a></li>
+            <li><a href="#">Mandatory Disclosure</a></li>
+            <li><a href="#">QCI Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Information and support</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Media Center</a></li>
+            <li><a href="#">Feedback and complaints</a></li>
+          </ul>
+        </div>
+
+        
+
+        <div class="footer-contact">
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> <strong>Address:</strong>Shisho West, Darbhanga, Bihar, 846005</li>
+            <li><i class="fas fa-phone"></i> <strong>Darbhanga:</strong>+91-09334887800, 9431253370, 3798990036</li>
+            <li><i class="fas fa-phone"></i> <strong>Delhi:</strong>+919910231288</li>
+            <li><i class="fa-regular fa-envelope"></i></i> <strong>Email Id:</strong>office@ocendia.com /principal@oceindia.com / director@oceindia.com</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    
+
+<!-- <i class="fab fa-whatsapp"></i> -->
+    <div class="footer-bottom">
+      <!-- <p>Copyright © 2025 Zayed University, United Arab Emirates. All rights reserved. Last updated on: 12/1/2024</p> -->
+
+      <div class="social-icons">
+        <span>Follow us on:</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
-.quick-links h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.links-container {
-  display: flex;
-  flex-wrap: nowrap;   /* Prevent wrapping to next line */
-  gap: 20px;
-  overflow-x: auto;    /* Allows horizontal scrolling if screen is small */
-  padding-bottom: 10px;
-}
-
-.link-card {
-  background: #f3f3f3;
-  border-radius: 10px;
-  flex: 0 0 180px;     /* Fixed width for each card */
-  height: 150px;
-  text-align: center;
-  text-decoration: none;
-  color: #222;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
-
-.link-card img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.link-card p {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.link-card:hover {
-  background: #9a1e22;
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* Optional: hide scrollbar on desktop for a cleaner look */
-.links-container::-webkit-scrollbar {
-  display: none;
-} -->
+</body>
+</html>

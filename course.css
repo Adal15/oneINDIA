@@ -1,0 +1,241 @@
+
+ body {
+  background-color: #f8f8f8;
+}
+
+/* Banner container */
+.banner {
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 95%;
+  margin: 40px auto;
+  height: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Left fixed section */
+.left-section {
+  background-color: #9b0d2a;
+  color: #fff;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-section h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/* Right side: slider container */
+.slider {
+  flex: 3;
+  background: linear-gradient(to bottom, #f3f3f3, #d7d7d7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Inner slides wrapper */
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Each slide stacked on top of each other */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeSlide 50s infinite; /* 10 slides × 5s each = 50s total */
+}
+
+/* Text inside slides */
+.slide a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  transition: color 0.3s, transform 0.3s;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.slide a:hover {
+  color: #9b0d2a;
+  transform: scale(1.05);
+}
+
+/* Keyframes for fading slides */
+@keyframes fadeSlide {
+  0% { opacity: 0; }
+  4% { opacity: 1; }
+  10% { opacity: 1; }
+  14% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Delay each slide for sequential fade timing */
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 5s; }
+.slide:nth-child(3) { animation-delay: 10s; }
+.slide:nth-child(4) { animation-delay: 15s; }
+.slide:nth-child(5) { animation-delay: 20s; }
+.slide:nth-child(6) { animation-delay: 25s; }
+.slide:nth-child(7) { animation-delay: 30s; }
+.slide:nth-child(8) { animation-delay: 35s; }
+.slide:nth-child(9) { animation-delay: 40s; }
+.slide:nth-child(10){ animation-delay: 45s; }
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .slider {
+    height: 150px;
+  }
+
+  .slide a {
+    font-size: 1.4rem;
+  }
+
+  .left-section h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ==== COURSES SECTION ==== */
+.courses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* ✅ Centers all content horizontally */
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Section heading */
+.courses h2 {
+  text-align: center;
+  color: #9b0d2a;
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid #9b0d2a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Subtitles (Course Name, Internship, etc.) */
+.courses b {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #70091f;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Paragraphs */
+.courses p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #444;
+  text-align: justify;
+  width: 90%; /* Keeps paragraphs nicely aligned with the table */
+}
+
+/* ==== TABLE DESIGN ==== */
+.course {
+  width: 90%;                 /* ✅ Table width 90% */
+  margin: 25px auto;          /* ✅ Centers horizontally */
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Table header */
+.course th {
+  background-color: #9b0d2a;
+  color: #fff;
+  padding: 14px;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Table cells */
+.course td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+/* Alternating rows */
+.course tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+.course tr:hover {
+  background-color: #f1e4e6;
+  transition: 0.3s ease-in-out;
+}
+
+/* Total row */
+.course tr:last-child th {
+  background-color: #70091f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17px;
+}
+#pa{
+    text-align: center;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .courses {
+    padding: 20px 10px;
+  }
+
+  .courses p {
+    width: 100%;
+  }
+
+  .course {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .course th,
+  .course td {
+    padding: 8px;
+  }
+}
