@@ -136,7 +136,7 @@ body {
   width: 100%;
   height: 80vh;
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* ===== IMAGE SLIDER ===== */
@@ -217,7 +217,7 @@ body {
 }
 
 .para {
-  height: 434px;
+  height: 433px;
   width: 500px;
   border: 1px solid black;
   margin-left: 15px;
@@ -241,17 +241,21 @@ body {
 }
 
 .admission{
-  height: 220px;
+  height: 180px;
   width: 100%;
   background-color: #9a1e22;
+  box-sizing: border-box;
+  border-radius: 55px;
 }
 
 .admission h2{
-  padding-top: 10px;
+  /* display: flex; */
+  /* justify-content: center; */
+  padding-top: 23px;
   color: white;
   text-align: center;
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .admission p{
   text-align: center;
@@ -274,32 +278,7 @@ body {
 /* end  */
 
 
-.subjects{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    gap: 2px;
-    height: 45vh;
-    width: 100%;
-    flex-wrap: wrap;
-    background-image: url(./prograGemini.png);
-}
 
-.subjects a{
-  position:absolute;
-  text-align: end;
-  background-color: #9a1e22;
-  text-decoration: none;
-  color: #ddd;
-}
-
-.program h2 {
-  margin: 15px;
-}
-
-.program b {
-  margin: 15px;
-}
 
 /* Subjects container */
 .subjects {
@@ -310,7 +289,7 @@ body {
   flex-wrap: wrap;
   height: 45vh;
   width: 100%;
-  background-image: url(./prograGemini.png);
+  background-image: url(./programimg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -616,6 +595,31 @@ button:hover {
     width: 90%;
   }
 }
+.contact-us1{
+  padding-top: 30px;
+}
+
+.admission1{
+  height: 100px;
+  width: 100%;
+  background-color: #9a1e22;
+  box-sizing: border-box;
+  border-radius: 55px;
+}
+
+
+.admission1 p{
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+
+
+
+/* end  */
 
 
 .footer {
