@@ -148,7 +148,7 @@
   padding-bottom: 5px;
 }
 
-/* Subtitles (Course Name, Internship, etc.) */
+/* Subtitles (Course NameInternship) */
 .courses b {
   display: block;
   margin-top: 25px;
@@ -190,8 +190,25 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+#course{
+    text-align: left;
+  padding-left: 101px;
+}
 #left{
-  padding-left: 10px;
+  text-align: left;
+  padding-left: 67px;
+}
+#left1{
+  text-align: left;
+  padding-left: 75px;
+}
+#left2{
+  text-align: left;
+  padding-left: 75px;
+}
+#course1{
+  text-align: left;
+  padding-left: 103px;;
 }
 
 /* Table cells */
