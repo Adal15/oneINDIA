@@ -80,7 +80,7 @@ body {
   list-style: none;
   padding: 0.25rem 0;
   border-radius: 6px;
-  min-width: 160px;
+  min-width: 115px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -111,7 +111,10 @@ body {
   transform: translateY(0);
   gap: 5px;
 }
-
+/* #bed{
+  min-width: 80px!important;
+  padding: 0.25rem 0;
+} */
 .nav-right{
   align-items: center;
   flex: 1;
@@ -242,12 +245,12 @@ body {
 
 .admission{
   height: 120px;
-  width: 100%;
+  width: 99%;
   background-color: #9a1e22;
   /* box-sizing: border-box; */
-  border-radius: 55px;
+  border-radius: 15px;
   text-align: center;
-  
+  margin-left: 9px;
 }
 
 .admission h2{
@@ -606,10 +609,11 @@ button:hover {
 
 .admission1{
   height: 100px;
-  width: 100%;
+  width: 99%;
   background-color: #9a1e22;
   box-sizing: border-box;
-  border-radius: 55px;
+  border-radius: 15px;
+      margin-left: 9px;
 }
 
 
@@ -632,6 +636,7 @@ button:hover {
   color: #333;
   border-top: 4px solid #9a1e22;
   margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 .footer-top {
@@ -704,6 +709,7 @@ button:hover {
   align-items: center;
   flex-wrap: wrap;
   font-size: 14px;
+  margin-bottom: 0px;
 }
 
 .social-icons {

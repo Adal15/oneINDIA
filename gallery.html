@@ -323,28 +323,42 @@
     <script>
 document.addEventListener("DOMContentLoaded", function() {
   const containerEl = document.querySelector(".gallery-container");
-  if (!containerEl) {
-    console.error(" Gallery container not found!");
-    return;
+  if (!containerEl) return;
+
+  // Initialize MixItUp
+  const mixer = mixitup(containerEl, {
+    selectors: { target: '.mix' },
+    animation: { enable: false }
+  });
+
+  const buttons = document.querySelectorAll(".controls .filter");
+  const captions = document.querySelectorAll(".gallery-item .caption");
+
+  // Function to toggle captions
+  function toggleCaptions(show) {
+    captions.forEach(caption => {
+      caption.style.display = show ? "block" : "none";
+    });
   }
 
-  // ✅ Initialize MixItUp only once
-  const mixer = mixitup('.gallery-container', {
-  selectors: { target: '.mix' },
-  animation: { enable: false },
-  controls: { scope: 'global' }
-});
+  // Initially hide captions (for 'All')
+  toggleCaptions(false);
 
-
-
-  console.log("✅ MixItUp initialized successfully");
-
-  // ✅ Filter button active state
-  const buttons = document.querySelectorAll(".controls .filter");
+  // Handle filter button clicks
   buttons.forEach(btn => {
     btn.addEventListener("click", function() {
       buttons.forEach(b => b.classList.remove("active"));
       this.classList.add("active");
+
+      // Get the selected filter type
+      const filterType = this.getAttribute("data-filter");
+
+      // Show captions only for specific categories
+      if (filterType === ".activities" || filterType === ".infrastructure" || filterType === ".seminars" || filterType === ".sports") {
+        toggleCaptions(true);
+      } else {
+        toggleCaptions(false);
+      }
     });
   });
 
@@ -371,7 +385,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (visible.length === 0) return;
     index = (index + visible.length) % visible.length;
     lightboxImg.src = visible[index].img.src;
-    lightboxCaption.textContent = visible[index].caption.textContent;
+    lightboxCaption.textContent = visible[index].caption ? visible[index].caption.textContent : "";
     lightbox.style.display = "flex";
     currentIndex = index;
   }
@@ -392,6 +406,7 @@ document.addEventListener("DOMContentLoaded", function() {
   rightArrow.addEventListener("click", () => showLightbox(currentIndex + 1));
 });
 </script>
+
 
 
 </body>
