@@ -27,7 +27,7 @@ body {
   display: flex;
   align-items: center;
   flex: 1;
-  /* padding-left: 10%; */
+  padding-left: 4%;
   text-decoration: none;
   color: #111;
 }
@@ -44,8 +44,9 @@ body {
 .nav-links ul {
   list-style: none;
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 1.2rem;
+  padding-left: 25px;
 }
 
 .nav-links ul li {
@@ -92,6 +93,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.0;
+  text-align: left;
 }
 
 .dropdown li a {
@@ -208,7 +210,7 @@ body {
 
 .hero h2 {
   padding-left: 7%;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .right-side h2 {
@@ -220,10 +222,11 @@ body {
 }
 
 .para {
-  height: 433px;
+  height: 459px;
   width: 500px;
   border: 1px solid black;
   margin-left: 15px;
+  padding-top: 14px;
 }
 
 .para h4 {
@@ -234,9 +237,11 @@ body {
 /* end */
 .program h2  {
     margin: 15px;
+    margin-left: 65px;
 }
 .program b  {
     margin: 15px;
+    margin-left: 65px;
 }
 /* contact us */
 .contact-us{
@@ -267,7 +272,7 @@ body {
 .admission p{
   text-align: center;
   color: white;
-  font-weight: 700;
+  font-weight:500;
   font-size: xx-large;
   margin-top: -43px;
 }
@@ -392,7 +397,7 @@ p {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  margin-left: 15px;
+  margin-left: 65px;
 }
 
 .links-container {
@@ -436,7 +441,7 @@ p {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  margin-left: 15px;
+  margin-left: 65px;
 }
 
 .news-container {
@@ -621,7 +626,7 @@ button:hover {
   text-align: center;
   padding-top: 25px;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   font-size: xx-large;
 }
 
