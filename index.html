@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>one-z</title>
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -12,110 +18,17 @@
       crossorigin="anonymous"referrerpolicy="no-referrer"/>
   </head>
   <body>
-    <div class="red"></div>
-    <header class="navbar">
-      <div class="nav-left">
-        <a href="./index.html" class="logo">
-          <i class="fa-solid fa-house"></i> <!--About Oriental College Of Education-->
-        </a>
+    <div id="head_content"></div>
+      <div id="body_content">
 
-        <nav class="nav-links">
-          <ul>
-            <!-- <li>
-              <a href="#">Academic Programs<i class="fa fa-angle-down"></i></a>
-            </li> -->
-
-            <li><a href="./aboutUs.html">About Us</a></li>
-
-
-            <li class="has-dropdown">
-              <a href="#">Courses<i class="fa fa-angle-down"></i></a>
-              <ul class="dropdown">
-                <li><a id="bed" href="./course.html">B.Ed.</a></li>
-              </ul>
-            </li>
-
-            <li class="has-dropdown">
-              <a href="#">Admission & Fee<i class="fa fa-angle-down"></i></a>
-              <ul class="dropdown">
-                <li><a href="./data.html">Admission Process</a></li>
-                <li><a href="./data.html">Fee Structure</a></li>
-              </ul>
-            </li>
-
-            <li class="has-dropdown">
-              <a href="#">Management & Staff<i class="fa fa-angle-down"></i></a>
-              <ul class="dropdown">
-                <li><a href="./data.html">Admission Process</a></li>
-                <li><a href="./data.html">Fee Structure</a></li>
-                <li><a href="./data.html">IQAC </a></li>
-                <li><a href="./data.html">GRC</a></li>
-                <li><a href="./data.html">Governance Structure</a></li>
-              </ul>
-            </li>
-
-            <li class="has-dropdown">
-              <a href="#">Students<i class="fa fa-angle-down"></i></a>
-              <ul class="dropdown">
-                <li><a href="./data.html">Details of 2022-2024</a></li>
-                <li><a href="./data.html">Details of 2021-2023</a></li>
-                <li><a href="./data.html">Anti Ragging</a></li>
-                <li><a href="./data.html">Grievance Redressal</a></li>
-              </ul>
-            </li>
-
-            <li class="has-dropdown">
-              <a href="#">Documents & Policy<i class="fa fa-angle-down"></i></a>
-              <ul class="dropdown">
-                <li><a href="./data.html">Legal Document as per NCTE Guideline</a></li>
-                <li><a href="./data.html">Legal Policy</a></li>
-                <li><a href="./data.html">Balance Sheet</a></li>
-                <li><a href="./data.html">Fees & Fund</a></li>
-                <li><a href="./data.html">Income & Expenditure 2022-2023</a><li>
-                  <li><a href="./data.html">Receipts & Payments 2022-2023</a></li>
-              </ul>
-            </li>
-
-            <li><a href="./gallery.html">Gallery</a></li>
-
-
-            <li class="has-dropdown">
-              <a href="#"
-                >Achievement & Others<i class="fa fa-angle-down"></i
-              ></a>
-              <ul class="dropdown">
-                <li><a href="./data.html">Achievements</a></li>
-                <li><a href="./data.html">Activities</a></li>
-                <li><a href="./gallery.html">Infrastructure</a></li>
-              </ul>
-            </li>
-            <li><a href="./enquiry.html">Enquiry</a></li>
-
-            
-          </ul>
-        </nav>
-      </div>
-
-      <div class="nav-right">
-        <ul>
-          <li class="has-dropdown">
-            <!-- <a href="#"><i class="fa-solid fa-phone"></i></a> -->
-            <!-- <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a> -->
-            
-          </li>
-        </ul>
-      </div>
-    </header>
-
-
-    <section class="hero">
+         <section class="hero">
   <div class="slider">
-    <img src="./heroimg.png" alt="College Building" class="active" />
-    <img src="./heroimg2.png" alt="College Building" />
-    <img src="./heroimg.png" alt="College Building" />
-    <img src="./heroimg3.png" alt="College Building" />
-    <img src="./heroimg4.png" alt="College Building" />
-    <img src="./heroimg.png" alt="College Building" />
+    <img src="./slider/heroimg.png" alt="College Building" class="active" />
+    <img src="./slider/heroimg2.png" alt="College Building" />
+    <img src="./slider/heroimg.png" alt="College Building" />
+    <img src="./slider/heroimg3.png" alt="College Building" />
+    <img src="./slider/heroimg4.png" alt="College Building" />
+    <img src="./slider/heroimg.png" alt="College Building" />
 
   </div>
 
@@ -213,34 +126,34 @@
       <h2>Quick Links</h2>
       <div class="links-container">
         <a href="./course.html" class="link-card">
-          <img src="./graduation-capimg1.svg" alt="Undergraduate Programs" />
+          <img src="./iconsQuick/graduation-capimg1.svg" alt="Undergraduate Programs" />
           <p>Undergraduate Programs</p>
         </a>
-        <a href="./course.html" class="link-card">
+        <a href="./iconsQuick/coursesimg2.png" class="link-card">
           <img src="./coursesimg2.png" alt="Graduate Programs" />
           <p>Courses</p>
         </a>
         <a href="./data.html" class="link-card">
-          <img src="./icons8-calendar-50img2.png" alt="Events Calendar" />
+          <img src="./iconsQuick/icons8-calendar-50img2.png" alt="Events Calendar" />
           <p>Events Calendar</p>
         </a>
         <a href="./gallery.html" class="link-card">
-          <img src="./icons8-media-64img4.png" alt="e-Services" />
+          <img src="./iconsQuick/icons8-media-64img4.png" alt="e-Services" />
           <p>Media Gallery</p>
         </a>
         <a href="./gallery.html" class="link-card">
           <img
-            src="./icons8-infrastructure-img5.png"
+            src="./iconsQuick/icons8-infrastructure-img5.png"
             alt="Whistleblowing Report"
           />
           <p>Infrastructure</p>
         </a>
         <a href="./data.html" class="link-card">
-          <img src="./acheivemnetsimg6.png" alt="Vpals" />
+          <img src="./iconsQuick/acheivemnetsimg6.png" alt="Vpals" />
           <p>Achievements</p>
         </a>
         <a href="./data.html" class="link-card">
-          <img src="./icons8-notice-board-img7.png" alt="Media Gallery" />
+          <img src="./iconsQuick/icons8-notice-board-img7.png" alt="Media Gallery" />
           <p>Notice Board</p>
         </a>
       </div>
@@ -366,7 +279,108 @@
   </div>
 </section>
 
-      <footer class="footer">
+      </div>
+    <div id="foot_content"></div>
+     <script type="text/javascript">
+        $('#head_content').load('header.html');
+        $('#foot_content').load('footer.html');
+    </script>
+    <!-- <div class="red"></div>
+    <header class="navbar">
+      <div class="nav-left">
+        <a href="./index.html" class="logo">
+          <i class="fa-solid fa-house"></i> 
+        </a>
+
+        <nav class="nav-links">
+          <ul>
+              <a href="#">Academic Programs<i class="fa fa-angle-down"></i></a>
+            </li> 
+
+            <li><a href="./aboutUs.html">About Us</a></li>
+
+
+            <li class="has-dropdown">
+              <a href="#">Courses<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a id="bed" href="./course.html">B.Ed.</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#">Admission & Fee<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="./data.html">Admission Process</a></li>
+                <li><a href="./data.html">Fee Structure</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#">Management & Staff<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="./data.html">Admission Process</a></li>
+                <li><a href="./data.html">Fee Structure</a></li>
+                <li><a href="./data.html">IQAC </a></li>
+                <li><a href="./data.html">GRC</a></li>
+                <li><a href="./data.html">Governance Structure</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#">Students<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="./data.html">Details of 2022-2024</a></li>
+                <li><a href="./data.html">Details of 2021-2023</a></li>
+                <li><a href="./data.html">Anti Ragging</a></li>
+                <li><a href="./data.html">Grievance Redressal</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+              <a href="#">Documents & Policy<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="./data.html">Legal Document as per NCTE Guideline</a></li>
+                <li><a href="./data.html">Legal Policy</a></li>
+                <li><a href="./data.html">Balance Sheet</a></li>
+                <li><a href="./data.html">Fees & Fund</a></li>
+                <li><a href="./data.html">Income & Expenditure 2022-2023</a><li>
+                  <li><a href="./data.html">Receipts & Payments 2022-2023</a></li>
+              </ul>
+            </li>
+
+            <li><a href="./gallery.html">Gallery</a></li>
+
+
+            <li class="has-dropdown">
+              <a href="#"
+                >Achievement & Others<i class="fa fa-angle-down"></i
+              ></a>
+              <ul class="dropdown">
+                <li><a href="./data.html">Achievements</a></li>
+                <li><a href="./data.html">Activities</a></li>
+                <li><a href="./gallery.html">Infrastructure</a></li>
+              </ul>
+            </li>
+            <li><a href="./enquiry.html">Enquiry</a></li>
+
+            
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-right">
+        <ul>
+          <li class="has-dropdown">
+            
+          </li>
+        </ul>
+      </div>
+    </header> -->
+
+
+   
+
+      <!-- <footer class="footer">
     <div class="footer-top">
       <div class="footer-columns">
 
@@ -436,7 +450,7 @@
         <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
  
 

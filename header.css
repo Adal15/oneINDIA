@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  /* overflow-x: hidden; */
+  scroll-behavior:smooth;
+}
+
+.red {
+  border: 5px solid #9a1e22;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  white-space: nowrap;
+  overflow: visible;
+  height: 50px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 4%;
+  text-decoration: none;
+  color: #111;
+}
+
+.logo {
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+  margin-right: 2rem;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  align-items: left;
+  gap: 1.2rem;
+  padding-left: 25px;
+}
+
+.nav-links ul li {
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #9a1e22;
+}
+/* Dropdown menu */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0.25rem 4px;
+      padding-left: 2px;
+
+  border-radius: 6px;
+  min-width: 115px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+.dropdown li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  text-align:start;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0.4rem 1rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  color: #9a1e22;
+}
+
+.has-dropdown:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  gap: 5px;
+}
+/* #bed{
+  min-width: 80px!important;
+  padding: 0.25rem 0;
+} */
+.nav-right{
+  align-items: center;
+  flex: 1;
+  color: #111;
+  list-style: none;
+}
+.nav-right ul{
+    list-style: none;
+}
+.nav-right ul li a{
+    color: #111;
+    padding: 3 0;
+    padding-right: 30px;
+}
+.nav-right ul li a:hover{
+    color:#9a1e22;
+}
